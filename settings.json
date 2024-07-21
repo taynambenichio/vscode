@@ -14,11 +14,22 @@
     ".prettierrc": "json",
     "*.css": "css"
   },
+  // "tailwindCSS.experimental.classRegex": [
+  //   [
+  //     "tv\\(([^)]*)\\)",
+  //     "[\"'`]([^\"'`]*).*?[\"'`]",
+  //     "([\"'`][^\"'`]*.*?[\"'`])",
+  //     "[\"'`]([^\"'`]*).*?[\"'`]"
+  //   ],
+  //   "class:\\s*?[\"'`]([^\"'`]*).*?,"
+  // ],
   "tailwindCSS.experimental.classRegex": [
     [
       "tv\\(([^)]*)\\)",
+      "cva\\(([^)]*)\\)",
       "[\"'`]([^\"'`]*).*?[\"'`]"
-    ]
+    ],
+    "class:\\s*?[\"'`]([^\"'`]*).*?,"
   ],
   "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
@@ -48,7 +59,9 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
   },
   "editor.formatOnSave": true,
   "eslint.validate": [
@@ -127,10 +140,37 @@
   "WillLuke.nextjs.addTypesOnSave": true,
   "WillLuke.nextjs.hasPrompted": true,
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontWeight": "normal",
   "terminal.integrated.env.windows": {},
   "files.autoSave": "afterDelay",
   "prisma.showPrismaDataPlatformNotification": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "eslint.codeActionsOnSave.rules": null,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "github.copilot.preferredAccount": "taynambenichio",
+  "workbench.colorTheme": "Dracula Theme",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.debugpy",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.symbolScopes": [
+      "!Module"
+    ],
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "off"
+  },
+  "python.createEnvironment.trigger": "off",
 }
