@@ -18,7 +18,6 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension github.copilot
 code --install-extension github.copilot-chat
 code --install-extension github.vscode-github-actions
-code --install-extension heybourn.headwind
 code --install-extension humao.rest-client
 code --install-extension icrawl.discord-vscode
 code --install-extension irongeek.vscode-env
